@@ -5,7 +5,12 @@ Sort dca list in Backend without child table
 Make the list sortable:
 
 ``` code
-$GLOBALS['TL_DCA']['tl_yourTable']['list']['sorting']['listViewSortable'] == true;
+$GLOBALS['TL_DCA']['tl_yourTable']['list']['sorting']['listViewSortable'] = true;
+```
+
+!Add the field "sorting"!
+``` code
+$GLOBALS['TL_DCA']['tl_yourTable']['fields']['sorting']['sql'] = "int(10) unsigned NOT NULL default 0";
 ```
 
 ## Install
