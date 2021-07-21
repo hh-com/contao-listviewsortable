@@ -1,0 +1,26 @@
+{
+    "name":"hh-com/contao-listviewsortable",
+    "description":"Contao 4 bundle to sort the listview by drag and drop.",
+    "type":"contao-bundle",
+    "license":"LGPL-3.0-or-later",
+    "require":{
+        "php": "^7.2",
+        "contao/core-bundle": "^4.9"
+    },
+    "autoload": {
+        "psr-4": {
+			"Hhcom\\ContaoListViewSortable\\": "src/"
+        },
+		"classmap": [
+            "src/Resources/contao"
+		],
+		"exclude-from-classmap": [
+			"src/Resources/contao/config",
+            "src/Resources/contao/templates/",
+			"src/Resources/contao/languages"
+		]
+    },
+    "extra": {
+		"contao-manager-plugin": "Hhcom\\ContaoListViewSortable\\ContaoManager\\Plugin" 
+    }
+}
