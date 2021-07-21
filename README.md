@@ -36,8 +36,11 @@ Update your contao installation composer.json
 Run:
 
 php -d memory_limit=-1 ./path/to/composer.phar update
+
 php vendor/bin/contao-console cache:clear
+
 Run php vendor/bin/contao-console contao:symlinks
+
 
 
 
