@@ -24,8 +24,7 @@ class Plugin implements BundlePluginInterface, RoutingPluginInterface
         return [
             BundleConfig::create(ContaoListViewSortable::class) 
                 ->setLoadAfter([
-                    ContaoCoreBundle::class,
-                    'changelanguage',
+                    ContaoCoreBundle::class
                     ]),
         ];
     }
