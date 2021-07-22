@@ -26,7 +26,7 @@ Update your contao installation composer.json
 "repositories": [
     {
         "type": "path",
-        "url": "./src/hh-com/contao-listviewsortable",
+        "url": "src/hh-com/contao-listviewsortable",
         "options": {
                 "symlink": true
         }
@@ -44,7 +44,7 @@ php -d memory_limit=-1 ./path/to/composer.phar update
 
 php vendor/bin/contao-console cache:clear
 
-Run php vendor/bin/contao-console contao:symlinks
+php vendor/bin/contao-console contao:symlinks
 
 
 
